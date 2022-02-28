@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DojoWeather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>DojoWeather</h1>
+        <ul class="cities">
+            <li onclick = "weatherAlert()">Burbank</li>
+            <li onclick = "weatherAlert()">Chicago</li>
+            <li onclick = "weatherAlert()">Dallas</li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class ="city-header">
+            <h2>San Jose</h2>
+            <div class="display-measurement">
+                <p>show temperature in </p>
+                <select name="tempMeasurement" id="tempMeasurement" onchange="changeDegree()">
+                    <option value="°C">°C</option>
+                    <option value="°F">°F</option>
+                </select>
+            </div>
+        </div>
+        <div class="forcast">
+            <div class="weather">
+                <h3>Today</h3>
+                <img src="assets/some_rain.png" alt="some rain" class="weatherpic">
+                <p>some rain</p>
+                <ul class="temperature">
+                    <li class="high"><span id="high1" value="24">24</span>°</li>
+                    <li class="low"><span id= "low1">18</span>°</li>
+                </ul>
+            </div>
+            <div class="weather">
+                <h3>Tomorrow</h3>
+                <img src="assets/some_sun.png" alt="some sun" class="weatherpic">
+                <p>some sun</p>
+                <ul class="temperature">
+                    <li class="high"><span id = "high2"value="27">27</span>°</li>
+                    <li class="low"><span id= "low2">19</span>°</li>
+                </ul>
+            </div>
+            <div class="weather">
+                <h3>Friday</h3>
+                <img src="assets/some_clouds.png" alt="some clouds" class="weatherpic">
+                <p>some clouds</p>
+                <ul class="temperature">
+                    <li class="high"><span id="high3" value="21">21</span>°</li>
+                    <li class="low"><span id="low3">16</span>°</li>
+                </ul>
+            </div>
+            <div class="weather">
+                <h3>Saturday</h3>
+                <img src="assets/some_sun.png" alt="some sun" class="weatherpic">
+                <p>some sun</p>
+                <ul class="temperature">
+                    <li class="high"><span id="high4" value="26">26</span>°</li>
+                    <li class="low"><span id="low4">21</span>°</li>
+                </ul>
+            </div>
+        </div>
+        <div class="cookies-foot">
+            <img src="assets/cookie.png" alt="cookies symbol">
+            <div class="cookie-info">
+                <h4>Stop! Cookie time</h4>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+            </div>
+            <button onclick="cookies()">I Accept</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
